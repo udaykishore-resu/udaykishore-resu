@@ -8,7 +8,7 @@
 - Microservices implementation
 
 🛠️ Tech Stack:
-- Languages: Golang, Java, Scala, C++
+- Languages: Golang, Java, Scala
 - Frameworks: Spring Boot, Vert.x, Beego, Go Micro, Gin
 - Cloud: AWS, GCP
 - DevOps: Jenkins, Docker, Kubernetes
