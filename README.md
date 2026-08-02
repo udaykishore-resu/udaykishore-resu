@@ -107,6 +107,18 @@ Currently at **Capital One**, I'm building **multi-tenant SaaS onboarding platfo
 - **Action:** Built the engine in Java/Spring Boot on AWS CDK with API contracts defined via SpecKit; graph execution runs in containerized tasks on Fargate backed by DynamoDB, while long-running workflows run as Step Functions state machines with DynamoDB-backed persistence for auditability and replay; a Lambda API layer fronts both paths as a single entry point.
 - **Result:** A unified orchestration platform that scales elastically with no EC2 to manage, keeps a full replay/audit history, and gives consuming teams one decoupled entry point.
 
+### 🔗 Featured Repos
+
+**[MarketMate](https://github.com/udaykishore-resu/market-mate)** — Paste a YouTube cooking video link and get an ingredient list via GPT-4 extraction, plus nearby stores to buy them via the Google Maps API. Go backend, React frontend.
+
+**[Zero Trust API Gateway](https://github.com/udaykishore-resu/zero-trust-api-gateway)** — Go reverse proxy enforcing zero-trust auth on every request: JWT/JWKS verification, a lock-free RBAC policy engine, Redis-backed rate limiting, and async audit logging. Sub-2ms p50 overhead.
+
+**[Double-Entry Ledger](https://github.com/udaykishore-resu/double-entry-ledger)** — Go/Gin REST API implementing double-entry bookkeeping: accounts, journal entries, trial balance and balance sheet reports, kept balanced by a Postgres trigger.
+
+**[Guest Score](https://github.com/udaykishore-resu/guest-score)** — React/TypeScript app that scores hotel guests on stay history, policy adherence, and reported incidents to help hotels assess risk.
+
+**[Go Test Generator](https://github.com/udaykishore-resu/go-test-generator)** — React/TypeScript tool that scaffolds Go test templates (unit, integration, REST, gRPC, GraphQL) from pasted source code.
+
 ---
 
 ### 📫 Let's Connect
