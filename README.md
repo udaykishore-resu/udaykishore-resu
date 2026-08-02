@@ -9,9 +9,9 @@
 
 ### 🧭 About Me
 
-I'm a **Principal Software Engineer** with **12+ years** of experience architecting and operating production infrastructure at scale — from Fortune 500 fintech platforms to embedded IoT systems. I specialize in **Golang backend engineering** and **cloud platform engineering**, with deep hands-on expertise across **Kubernetes (EKS/GKE)**, **Infrastructure as Code**, and **observability-driven operations**.
+I'm a **Principal Software Engineer** with **12+ years** of experience building and operating production infrastructure at scale — from Fortune 500 fintech platforms to embedded IoT systems. My core focus is **Golang backend engineering** and **cloud platform engineering**, with deep, hands-on expertise in **Kubernetes (EKS/GKE)**, **Infrastructure as Code**, **zero-trust security**, and **observability-driven operations**.
 
-Currently building **multi-tenant SaaS onboarding platforms** and **sub-millisecond decision engines** processing 50M+ transactions daily at **Capital One**.
+Currently at **Capital One**, I'm building **multi-tenant SaaS onboarding platforms** and **sub-millisecond decision engines** that process 50M+ transactions daily. I care most about systems that stay fast, secure, and boring in production — the kind of infrastructure people trust without thinking about it.
 
 ---
 
