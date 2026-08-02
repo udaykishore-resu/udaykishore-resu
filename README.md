@@ -78,34 +78,25 @@ Currently at **Capital One**, I'm building **multi-tenant SaaS onboarding platfo
 ### 📌 Highlight Projects
 
 #### 🏦 Multi-Tenant SaaS Onboarding Platform
-- **Situation:** Manual per-tenant provisioning couldn't keep up as onboarding needed to be fast, secure, and isolated for every new tenant. 
-- **Task:** Build a self-service onboarding platform that scales horizontally while keeping each tenant fully isolated. 
-- **Action:** Built the platform in Golang on AWS CDK, with SQS/Lambda event-driven pipelines (DLQ-isolated per stage) and CloudFormation managed stacks; gave each tenant a VPC-isolated environment with Route 53 private hosted zones, locked down with AWS KMS, IAM permission boundaries, and Secrets Manager; added CloudWatch Alarms and Synthetics canaries plus OpenTelemetry tracing into Splunk, with usage streamed to Snowflake for analytics. 
-- **Result:** A horizontally auto-scaling, tenant-isolated onboarding platform with continuous validation and a full audit trail.
+
+Self-service tenant onboarding platform built in Golang on AWS CDK, with SQS/Lambda event-driven pipelines and a fully VPC-isolated environment per tenant. Locked down with AWS KMS, IAM permission boundaries, and Secrets Manager, with CloudWatch and OpenTelemetry for full observability. Scales horizontally with a complete audit trail.
 
 #### ⚡ Decision Orchestration Engine
-- **Situation:** Consumer-facing apps needed decisions at massive scale without being tightly coupled to the decisioning system's internal topology.
-- **Task:** Build the core decisioning services and a safe, simple way for client apps to consume them.
-- **Action:** Built Decision Orchestration and Decisioning Core in Golang over gRPC, fronted by a BFF layer that aggregates results into REST for consumers, documented with UML diagrams; secured service-to-service traffic with mTLS, OPA-based authorization, and short-lived JWTs; instrumented with OpenTelemetry into Splunk Observability Cloud and CloudWatch SLO-based alerting.
-- **Result:** 50M+ decisions per day at sub-millisecond latency, fully encrypted traffic, and automated on-call paging when SLOs slip.
+
+gRPC-based decisioning services in Golang, fronted by a BFF layer exposing REST to consumer apps and secured with mTLS and OPA-based authorization. Processes 50M+ decisions/day at sub-millisecond latency, with OpenTelemetry tracing and automated SLO-based alerting.
 
 #### 🔄 C++ → Golang Migration (NCR Voyix)
-- **Situation:** A legacy C++ self-checkout SDK was slowing down processing and capping how fast new stores could be onboarded.
-- **Task:** Lead the migration to a cloud-native stack without disrupting live store operations.
-- **Action:** Rebuilt the SDK as Golang microservices deployed on GKE via Helm; added MQTT pub/sub and Redis caching for device state; built a BFF (internal gRPC, external REST via a posless adapter) with Cloud DNS and VPC peering; wired up OpenTelemetry tracing into Splunk, automated test harnesses, and mTLS with least-privilege IAM. Led an 8-engineer team through the cutover.
-- **Result:** 30% latency reduction, checkout adoption up from 35% to 65%, 95% automated test coverage, and milestones delivered 15% ahead of schedule.
+
+Led an 8-engineer team migrating a legacy C++ self-checkout SDK to Golang microservices on GKE, adding MQTT/Redis for device state and full OpenTelemetry observability. Cut latency 30%, grew adoption from 35% to 65%, and reached 95% automated test coverage.
 
 #### 🗄️ IBM DB2 → AWS Aurora Migration
-- **Situation:** A DB2-to-Aurora migration had to happen without gaps in data integrity, security, or availability.
-- **Task:** Architect a two-phase migration covering both the bulk historical load and ongoing change data.
-- **Action:** Phase 1 used an HPC unload pipeline with SAFENET HSM encryption, S3 staging, and Lambda-driven bulk inserts protected by IAM and a KMS customer-managed key; Phase 2 layered on Qlik Replicate for CDC, an on-prem Kafka Data Encryptor, AWS MSK, a Scala-based Data Replicator, and a Schema Replicator to guarantee exactly-once delivery; the whole pipeline was secured with IAM, KMS, Direct Connect, and Splunk alerting.
-- **Result:** An HSM-encrypted, event-driven, exactly-once migration pipeline that's fully auditable end to end.
+
+Two-phase, HSM-encrypted migration pipeline: a bulk historical load via Lambda and S3, followed by CDC via Qlik Replicate, Kafka, and AWS MSK for exactly-once delivery. Fully auditable and secured end to end with IAM and KMS.
 
 #### 📈 Graphite Workflow Engine
-- **Situation:** Decisioning pipelines needed a unified way to run graph-based execution and long-running workflows with clear contracts between teams.
-- **Task:** Build an orchestration platform covering both graph execution and durable state machines.
-- **Action:** Built the engine in Java/Spring Boot on AWS CDK with API contracts defined via SpecKit; graph execution runs in containerized tasks on Fargate backed by DynamoDB, while long-running workflows run as Step Functions state machines with DynamoDB-backed persistence for auditability and replay; a Lambda API layer fronts both paths as a single entry point.
-- **Result:** A unified orchestration platform that scales elastically with no EC2 to manage, keeps a full replay/audit history, and gives consuming teams one decoupled entry point.
+
+Orchestration platform in Java/Spring Boot on AWS CDK, combining Fargate-based graph execution with Step Functions state machines for durable workflows, all behind a single Lambda API. Scales elastically with no EC2 to manage and a full replay/audit history.
+
 
 ### 🔗 Featured Repos
 
