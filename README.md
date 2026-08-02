@@ -17,12 +17,12 @@ Currently building **multi-tenant SaaS onboarding platforms** and **sub-millisec
 
 ### 🚀 What I Do
 
-- ☁️ **Cloud Infrastructure** — Multi-account, multi-cloud (AWS/GCP) environments codified with Terraform, AWS CDK & CloudFormation
+- ☁️ **Cloud Infrastructure** — Multi-account, multi-cloud (AWS/GCP) environments codified with Terraform, AWS CDK, CloudFormation & GCP Deployment Manager
 - ⚓ **Kubernetes at Scale** — EKS/GKE cluster administration, Helm-driven multi-environment deployments, mTLS service mesh security
 - 🔁 **CI/CD & GitOps** — Automated pipelines (Jenkins, GitHub Actions) with deployment gates, health checks & rollback logic
 - 📊 **Observability** — Full-stack instrumentation with OpenTelemetry, Prometheus, Grafana, Datadog & Splunk
-- 🔐 **Security & IAM** — Zero-trust architectures: mTLS, OAuth2/OIDC, workload identity, KMS/HSM encryption, PCI-DSS & NIST compliance
-- 🏗️ **Distributed Systems** — Event-driven microservices, BFF patterns, gRPC/REST/GraphQL APIs at massive scale
+- 🔐 **Security & IAM** — Zero-trust architectures: mTLS, OAuth2/OIDC, SSO, workload identity, KMS/HSM encryption, PCI-DSS & NIST compliance
+- 🏗️ **Distributed Systems** — Event-driven microservices, BFF patterns, gRPC/REST/GraphQL/MQTT APIs at massive scale
 
 ---
 
@@ -81,6 +81,7 @@ Currently building **multi-tenant SaaS onboarding platforms** and **sub-millisec
 - ⚡ **Decision Orchestration Engine** — gRPC/BFF architecture processing 50M+ decisions/day at sub-millisecond latency
 - 🔄 **C++ → Golang Migration (NCR Voyix)** — Cloud-native self-checkout microservices on GKE; 30% latency reduction, adoption up 35→65%
 - 🗄️ **IBM DB2 → AWS Aurora Migration** — HSM-encrypted, event-driven migration pipeline with CDC via Kafka/MSK
+- 📈 **Graphite Workflow Engine** — Workflow orchestration engine
 
 ---
 
