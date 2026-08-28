@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Udaykishore Resu</h1>
-<h3 align="center">Principal Software Engineer | Golang & Cloud Platform Engineering | Kubernetes • Terraform • Multi-Cloud</h3>
+<h3 align="center">Principal Software Engineer | Control planes & data planes in Go Kubernetes • AWS/GCP • Spec-driven systems • LLMs in production pipelines</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+cloud-native+systems+in+Go;12%2B+years+across+AWS+%26+GCP;Kubernetes+%7C+Terraform+%7C+GitOps;Observability-first+engineering" alt="Typing SVG" />
@@ -9,10 +9,11 @@
 
 ### 🧭 About Me
 
-I'm a **Principal Software Engineer** with **12+ years** of experience building and operating production infrastructure at scale — from Fortune 500 fintech platforms to embedded IoT systems. My core focus is **Golang backend engineering** and **cloud platform engineering**, with deep, hands-on expertise in **Kubernetes (EKS/GKE)**, **Infrastructure as Code**, **zero-trust security**, and **observability-driven operations**.
+I build control-plane and data-plane systems on AWS and GCP — Go, Scala and Java distributed services that process 50M+ transactions daily at sub-millisecond latency, alongside the control planes that provision,authorize, govern and observe them across 50+ tenants.
 
-Currently at **Capital One**, I'm building **multi-tenant SaaS onboarding platforms** and **sub-millisecond decision engines** that process 50M+ transactions daily. I care most about systems that stay fast, secure, and boring in production — the kind of infrastructure people trust without thinking about it.
+The thing I've spent this year on is **Intent = Execution**: what a system actually does should be continuously provable against what was specified. That means spec-driven development with BPMN process models and invariant conformance contracts, a CI/CD gate that blocks any deployment diverging from the approved spec, and a conformance engine that scores every runtime execution against its contract and records the evidence.
 
+Twelve years, starting in C++ on retail terminals and mobile hardware.I care most about systems that stay fast, secure, and boring in production — the kind of infrastructure people trust without thinking about it. These days I also use LLMs as engineering infrastructure rather than a demo: Claude in a C++-to-Go translation and test-harness pipeline, GPT-4 extraction in production data paths.
 ---
 
 ### 🚀 What I Do
@@ -97,19 +98,33 @@ Two-phase, HSM-encrypted migration pipeline: a bulk historical load via Lambda a
 
 Orchestration platform in Java/Spring Boot on AWS CDK, combining Fargate-based graph execution with Step Functions state machines for durable workflows, all behind a single Lambda API. Scales elastically with no EC2 to manage and a full replay/audit history.
 
+---
 
-### 🔗 Featured Repos
+### 🔗 Public Code
+**Start here — three repos, in order:**
 
-**[MarketMate](https://github.com/udaykishore-resu/market-mate)** — Paste a YouTube cooking video link and get an ingredient list via GPT-4 extraction, plus nearby stores to buy them via the Google Maps API. Go backend, React frontend.
+1. **[payments-platform](../../../payments-platform)** — a multi-tenant payment
+   gateway in Go. Nine deployables, hexagonal, no framework. A twelve-step
+   durable saga onboards merchants; a scored-routing orchestrator executes.
+   *Read this one if you want to see how I structure a system.*
 
-**[Zero Trust API Gateway](https://github.com/udaykishore-resu/zero-trust-api-gateway)** — Go reverse proxy enforcing zero-trust auth on every request: JWT/JWKS verification, a lock-free RBAC policy engine, Redis-backed rate limiting, and async audit logging. Sub-2ms p50 overhead.
+2. **[db-migration-platform](../../../db-migration-platform)** — zero-downtime,
+   self-verifying database migration. LSN-fenced writes, watermark-based
+   snapshot/CDC, hierarchical digest reconciliation, and a cutover gate that
+   is a proof rather than a checklist.
+   *Read this one if you want to see how I think about correctness.*
 
-**[Double-Entry Ledger](https://github.com/udaykishore-resu/double-entry-ledger)** — Go/Gin REST API implementing double-entry bookkeeping: accounts, journal entries, trial balance and balance sheet reports, kept balanced by a Postgres trigger.
+3. **[request-journey](../../../request-journey)** — one web request across
+   browser, DNS, TLS, AWS, Kubernetes, data stores and observability, plus
+   16 failure modes, all runnable.
+   *Read this one if you want to see how I explain things.*
 
-**[Guest Score](https://github.com/udaykishore-resu/guest-score)** — React/TypeScript app that scores hotel guests on stay history, policy adherence, and reported incidents to help hotels assess risk.
-
-**[Go Test Generator](https://github.com/udaykishore-resu/go-test-generator)** — React/TypeScript tool that scaffolds Go test templates (unit, integration, REST, gRPC, GraphQL) from pasted source code.
-
+**Also public:**
+- `agentgate` — provider-agnostic control plane for enterprise AI agents ·
+- `vertex-sco-platform` — event-driven self-checkout edge platform ·
+- `zero-trust-api-gateway` — identity-aware reverse proxy, sub-2ms p50 ·
+- `specforge` — governed spec-driven engineering, hash-chained audit trail ·
+- `infoblox-ipam-operator` — CRD-based IPAM allocation with drift detection .
 ---
 
 ### 📫 Let's Connect
