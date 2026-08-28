@@ -14,6 +14,7 @@ I build control-plane and data-plane systems on AWS and GCP — Go, Scala and Ja
 The thing I've spent this year on is **Intent = Execution**: what a system actually does should be continuously provable against what was specified. That means spec-driven development with BPMN process models and invariant conformance contracts, a CI/CD gate that blocks any deployment diverging from the approved spec, and a conformance engine that scores every runtime execution against its contract and records the evidence.
 
 Twelve years, starting in C++ on retail terminals and mobile hardware.I care most about systems that stay fast, secure, and boring in production — the kind of infrastructure people trust without thinking about it. These days I also use LLMs as engineering infrastructure rather than a demo: Claude in a C++-to-Go translation and test-harness pipeline, GPT-4 extraction in production data paths.
+
 ---
 
 ### 🚀 What I Do
@@ -76,27 +77,50 @@ Twelve years, starting in C++ on retail terminals and mobile hardware.I care mos
 
 ---
 
-### 📌 Highlight Projects
+### 📌 Production Work
 
-#### 🏦 Multi-Tenant SaaS Onboarding Platform
+*Systems built inside employers — no public repository. Public code is in the section below.*
 
-Self-service tenant onboarding platform built in Golang on AWS CDK, with SQS/Lambda event-driven pipelines and a fully VPC-isolated environment per tenant. Locked down with AWS KMS, IAM permission boundaries, and Secrets Manager, with CloudWatch and OpenTelemetry for full observability. Scales horizontally with a complete audit trail.
+#### 🎛️ Intent = Execution — Conformance Across Control Plane and Data Plane
 
-#### ⚡ Decision Orchestration Engine
+Architected a consumer decisioning platform as a **control plane** that defines intent and a **data plane** that executes it, with conformance enforced continuously across both so deployed behavior is provably equal to declared specification. Established Speckit (spec-driven development) as the control plane's source of truth — PRD, Spec.md, BPMN process models, and invariant conformance contracts — giving product, risk, and engineering one machine-readable definition of intent that the data plane consumes directly. An I=E gate check in the CI/CD pipeline blocks any deployment whose BPMN flows or invariants diverge from the approved spec.
 
-gRPC-based decisioning services in Golang, fronted by a BFF layer exposing REST to consumer apps and secured with mTLS and OPA-based authorization. Processes 50M+ decisions/day at sub-millisecond latency, with OpenTelemetry tracing and automated SLO-based alerting.
+The data-plane **I=E Conformance Engine** — BPMN parser, invariant evaluator, verdict producer, evidence recorder — scores every execution against its contract and writes verdicts to a persistence layer used for replay, audit, and regulatory review. Governance stops being a document and becomes a test.
 
-#### 🔄 C++ → Golang Migration (NCR Voyix)
+**Stack:** Golang · BPMN · AWS CDK · CI/CD gate checks · immutable audit trail
 
-Led an 8-engineer team migrating a legacy C++ self-checkout SDK to Golang microservices on GKE, adding MQTT/Redis for device state and full OpenTelemetry observability. Cut latency 30%, grew adoption from 35% to 65%, and reached 95% automated test coverage.
+#### ⚡ Decision Orchestrator & Decisioning Core
 
-#### 🗄️ IBM DB2 → AWS Aurora Migration
+gRPC decisioning services in Golang behind a BFF layer exposing REST to consumer applications, secured with mTLS and OPA-based authorization. Serves **50M+ decisions daily at sub-millisecond latency**. Fronted by Decision Control Plane REST APIs with multi-auth support (OAuth 2.0, API key, JWT) and per-tenant IAM policies over DynamoDB audit state. Instrumented end to end with OpenTelemetry and SLO-based automated paging.
 
-Two-phase, HSM-encrypted migration pipeline: a bulk historical load via Lambda and S3, followed by CDC via Qlik Replicate, Kafka, and AWS MSK for exactly-once delivery. Fully auditable and secured end to end with IAM and KMS.
+**Stack:** Golang · gRPC · BFF · mTLS · OPA · DynamoDB · OpenTelemetry
 
-#### 📈 Graphite Workflow Engine
+#### 🏗️ Multi-Tenant Onboarding Control Plane
 
-Orchestration platform in Java/Spring Boot on AWS CDK, combining Fargate-based graph execution with Step Functions state machines for durable workflows, all behind a single Lambda API. Scales elastically with no EC2 to manage and a full replay/audit history.
+Golang onboarding control plane on AWS CDK that provisions and governs **50+ tenants**, each in a VPC-isolated, Route 53-routed environment. SQS/Lambda event-driven autoscaling with DLQ error isolation, locked down with KMS, IAM permission boundaries, and Secrets Manager. The control-plane governance UI — conformance dashboard, invariant-breach alerting, and immutable audit trail — turns tenant behavior into evidence-backed reporting for engineering, risk, and audit stakeholders.
+
+**Stack:** Golang · AWS CDK · SQS/Lambda · KMS · Route 53 · CloudWatch
+
+#### 🧪 Graphite Workflow Engine & Rules Lab
+
+Graph-based orchestration platform in Java/Spring Boot on Fargate and Step Functions, paired with a Graph Execution Engine that runs those decisioning graphs in the deployed data plane. On top of it, **Rules Lab** lets analysts author, simulate, and promote decisioning rules against the same graph runtime that serves production traffic — shortening rule turnaround without a code release.
+
+**Stack:** Java · Spring Boot · Fargate · Step Functions · Lambda
+
+#### 🔄 C++ → Golang Self-Checkout SDK Rewrite · NCR Voyix
+
+Directed an **8-engineer rewrite** of a legacy C++ self-checkout SDK into Golang microservices on GKE, defining the service patterns used across cart, POS, and loyalty. Cut transaction latency 30% and lifted customer adoption from 35% to 65%. Designed the BFF layer (gRPC internally, REST externally) with MQTT pub/sub and Redis-backed session state, and applied mutual TLS between GKE services and POS devices under least-privilege Cloud IAM.
+
+Integrated **Claude** into the team's engineering workflow for C++-to-Go translation, code review, and test-harness generation — accelerating the rewrite and standardizing service patterns across the group. Reached 95% automated coverage and delivered milestones 15% ahead of schedule.
+
+**Stack:** Golang · GKE · gRPC · MQTT · Redis · Terraform · Helm · Claude
+
+#### 🗄️ IBM DB2 → AWS Aurora Zero-Downtime Migration · Experian
+
+Two-phase credit-data migration off the mainframe stack using SAFENET HSM-encrypted staging and Kafka/Scala CDC — **70% runtime reduction with zero PII exposure**, secured end to end with IAM roles, KMS CMK encryption, Direct Connect VPC routing, and Splunk anomaly alerting. Rebuilt dispute processing as an async graph platform on Amazon Neptune, modeling creditor relationship graphs for sub-200ms lookups behind SQS/DLQ-backed REST APIs.
+
+**Stack:** Scala · Golang · Kafka/MSK · Aurora · Amazon Neptune · SAFENET HSM · Splunk
+
 
 ---
 
