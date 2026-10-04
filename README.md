@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=2E9EF7&center=true&vCenter=true&width=640&lines=50M%2B+decisions+a+day+at+sub-millisecond+latency;Intent+%3D+Execution%3A+deployments+that+prove+they+match+the+spec;Upstream+contributor%3A+NVIDIA+%C2%B7+Kubernetes+SIGs+%C2%B7+ORE;12%2B+years%2C+from+C%2B%2B+on+retail+terminals+to+Go+control+planes" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=2E9EF7&center=true&vCenter=true&width=720&lines=50M%2B+decisions+a+day+at+sub-ms+latency;Intent+%3D+Execution%2C+proven+in+CI%2FCD;Upstream%3A+NVIDIA+%C2%B7+Kubernetes+SIGs+%C2%B7+ORE;12%2B+years%3A+C%2B%2B+terminals+to+Go+control+planes" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 | 🎛️ **Signature work** | **Intent = Execution**: a CI/CD gate and a runtime conformance engine that prove deployed behavior matches the approved spec |
 | 🌐 **Open source** | Upstream pull requests to **NVIDIA**, **Kubernetes SIGs (Karpenter)** and **Open Source Risk Engine** |
 | 📘 **Writing** | Author of *System Design for AI: Architecting Production-Grade LLM, RAG, Agentic, and AI Platforms* (2026) |
-| 🏅 **Certified** | Google Cloud Professional Cloud Architect · AWS Solutions Architect – Associate · Anthropic Claude Certified Architect |
+| 🏅 **Certified** | Anthropic Claude Certified Architect · Google Cloud Professional Cloud Architect · AWS Solutions Architect – Associate |
 
 ---
 
