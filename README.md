@@ -1,161 +1,179 @@
-<h1 align="center">Hi 👋, I'm Udaykishore Resu</h1>
-<h3 align="center">Principal Software Engineer | Control planes & data planes in Go Kubernetes • AWS/GCP • Spec-driven systems • LLMs in production pipelines</h3>
+<h1 align="center">Udaykishore Resu</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+cloud-native+systems+in+Go;12%2B+years+across+AWS+%26+GCP;Kubernetes+%7C+Terraform+%7C+GitOps;Observability-first+engineering" alt="Typing SVG" />
+  <b>Principal Software Engineer</b> · Control planes and data planes in Go · AWS / GCP · Kubernetes · Spec-driven systems · LLMs in production
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1200&color=2E9EF7&center=true&vCenter=true&width=640&lines=50M%2B+decisions+a+day+at+sub-millisecond+latency;Intent+%3D+Execution%3A+deployments+that+prove+they+match+the+spec;Upstream+contributor%3A+NVIDIA+%C2%B7+Kubernetes+SIGs+%C2%B7+ORE;12%2B+years%2C+from+C%2B%2B+on+retail+terminals+to+Go+control+planes" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/udaykishore-resu"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:iamudaykishore@outlook.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://medium.com/@udaykishoreresu"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
 </p>
 
 ---
 
-### 🧭 About Me
+## At a glance
 
-I build control-plane and data-plane systems on AWS and GCP — Go, Scala and Java distributed services that process 50M+ transactions daily at sub-millisecond latency, alongside the control planes that provision,authorize, govern and observe them across 50+ tenants.
-
-The thing I've spent this year on is **Intent = Execution**: what a system actually does should be continuously provable against what was specified. That means spec-driven development with BPMN process models and invariant conformance contracts, a CI/CD gate that blocks any deployment diverging from the approved spec, and a conformance engine that scores every runtime execution against its contract and records the evidence.
-
-Twelve years, starting in C++ on retail terminals and mobile hardware.I care most about systems that stay fast, secure, and boring in production — the kind of infrastructure people trust without thinking about it. These days I also use LLMs as engineering infrastructure rather than a demo: Claude in a C++-to-Go translation and test-harness pipeline, GPT-4 extraction in production data paths.
-
----
-
-### 🚀 What I Do
-
-- ☁️ **Cloud Infrastructure** — Multi-account, multi-cloud (AWS/GCP) environments codified with Terraform, AWS CDK, CloudFormation & GCP Deployment Manager
-- ⚓ **Kubernetes at Scale** — EKS/GKE cluster administration, Helm-driven multi-environment deployments, mTLS service mesh security
-- 🔁 **CI/CD & GitOps** — Automated pipelines (Jenkins, GitHub Actions) with deployment gates, health checks & rollback logic
-- 📊 **Observability** — Full-stack instrumentation with OpenTelemetry, Prometheus, Grafana, Datadog & Splunk
-- 🔐 **Security & IAM** — Zero-trust architectures: mTLS, OAuth2/OIDC, SSO, workload identity, KMS/HSM encryption, PCI-DSS & NIST compliance
-- 🏗️ **Distributed Systems** — Event-driven microservices, BFF patterns, gRPC/REST/GraphQL/MQTT APIs at massive scale
+| | |
+|---|---|
+| 🧭 **Experience** | 12+ years · Capital One · NCR Voyix · Experian · CBRE · NCR · Qualcomm |
+| ⚡ **Scale** | 50M+ decisions a day at sub-millisecond latency, across 50+ tenants |
+| 🎛️ **Signature work** | **Intent = Execution**: a CI/CD gate and a runtime conformance engine that prove deployed behavior matches the approved spec |
+| 🌐 **Open source** | Upstream pull requests to **NVIDIA**, **Kubernetes SIGs (Karpenter)** and **Open Source Risk Engine** |
+| 📘 **Writing** | Author of *System Design for AI: Architecting Production-Grade LLM, RAG, Agentic, and AI Platforms* (2026) |
+| 🏅 **Certified** | Google Cloud Professional Cloud Architect · AWS Solutions Architect – Associate · Anthropic Claude Certified Architect |
 
 ---
 
-### 🛠️ Tech Stack
+## What I do
 
-**Languages**
-![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Scala](https://img.shields.io/badge/-Scala-DC322F?style=flat-square&logo=scala&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+I build the control planes that provision, authorize, govern and observe systems, and the data planes that execute them, mostly in Go, with Scala and Java where the platform calls for it. I care about systems that stay fast, secure and boring in production: the kind of infrastructure people trust without thinking about it.
 
-**Cloud & Infrastructure**
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Helm](https://img.shields.io/badge/-Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+This year's theme has been **Intent = Execution**: what a system does should be continuously provable against what was specified.
 
-**CI/CD & Automation**
-![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+```mermaid
+flowchart LR
+    A["Spec<br/>PRD · Spec.md · BPMN<br/>invariant contracts"] --> B{"CI/CD<br/>I=E gate"}
+    B -- "diverges from spec" --> X["Deployment blocked"]
+    B -- "matches spec" --> C["Data plane<br/>executes"]
+    C --> D["Conformance engine<br/>scores every execution"]
+    D --> E["Verdicts + evidence<br/>replay · audit · regulators"]
+```
 
-**Data & Messaging**
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white)
-![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/-Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
-
-**Observability**
-![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Datadog](https://img.shields.io/badge/-Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white)
-![Splunk](https://img.shields.io/badge/-Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
-
-**APIs**
-![REST](https://img.shields.io/badge/-REST-02569B?style=flat-square&logo=fastapi&logoColor=white)
-![gRPC](https://img.shields.io/badge/-gRPC-2E7D8C?style=flat-square&logo=google&logoColor=white)
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
-![MQTT](https://img.shields.io/badge/-MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)
+I also use LLMs as engineering infrastructure rather than a demo: Claude in a C++-to-Go translation and test-harness pipeline, and GPT-4 extraction in production data paths.
 
 ---
 
-### 🏆 Certifications
+## 🌐 Open-source contributions
 
-- ☁️ Google Cloud Professional Cloud Architect
-- ☁️ AWS Certified Solutions Architect – Associate
-- 🧑‍💻 Programming in Golang Specialization (Coursera)
-- 🤖 Generative AI Fundamentals (Databricks)
+| Project | Contribution | Status |
+|---|---|---|
+| [**NVIDIA/NVSentinel**](https://github.com/NVIDIA/NVSentinel/pull/1750) | AWS Elastic Fabric Adapter (EFA) support in the NIC health monitor: discovery, link-state and degradation checks, syslog patterns. +2,377 lines across 30 files | Draft · awaiting hardware validation |
+| [**kubernetes-sigs/karpenter**](https://github.com/kubernetes-sigs/karpenter/pull/3303) | Price-aware bin-packing, so mixed spot/on-demand NodePools keep a spot option instead of falling back to on-demand | In review |
+| [**OpenSourceRisk/Engine**](https://github.com/OpenSourceRisk/Engine/issues/366) | Fix for American FX barriers silently priced as European in the Gaussian cross-asset model, with a regression test | In review |
 
 ---
 
-### 📌 Production Work
+## 🔗 Featured code
 
-*Systems built inside employers — no public repository. Public code is in the section below.*
+**Start here, in this order:**
 
-#### 🎛️ Intent = Execution — Conformance Across Control Plane and Data Plane
+1. **[payments-platform](https://github.com/udaykishore-resu/payments-platform)**: multi-tenant payment gateway in Go. Nine deployables, hexagonal, no framework. A twelve-step durable saga onboards merchants; a scored-routing orchestrator executes. *How I structure a system.*
+2. **[db-migration-platform](https://github.com/udaykishore-resu/db-migration-platform)**: zero-downtime, self-verifying database migration. LSN-fenced writes, watermark-based snapshot/CDC, hierarchical digest reconciliation, and a cutover gate that is a proof rather than a checklist. *How I think about correctness.*
+3. **[request-journey](https://github.com/udaykishore-resu/request-journey)**: one web request across browser, DNS, TLS, AWS, Kubernetes, data stores and observability, plus 16 failure modes, all runnable. *How I explain things.*
 
-Architected a consumer decisioning platform as a **control plane** that defines intent and a **data plane** that executes it, with conformance enforced continuously across both so deployed behavior is provably equal to declared specification. Established Speckit (spec-driven development) as the control plane's source of truth — PRD, Spec.md, BPMN process models, and invariant conformance contracts — giving product, risk, and engineering one machine-readable definition of intent that the data plane consumes directly. An I=E gate check in the CI/CD pipeline blocks any deployment whose BPMN flows or invariants diverge from the approved spec.
+**More:**
 
-The data-plane **I=E Conformance Engine** — BPMN parser, invariant evaluator, verdict producer, evidence recorder — scores every execution against its contract and writes verdicts to a persistence layer used for replay, audit, and regulatory review. Governance stops being a document and becomes a test.
+| Repo | What it is |
+|---|---|
+| [agentgate](https://github.com/udaykishore-resu/agentgate) | Control plane for enterprise AI agents: provider-agnostic model gateway, agent identity and promotion gate, fleet observability and cost attribution |
+| [specforge](https://github.com/udaykishore-resu/specforge) | Governed spec-driven engineering: a traceable graph from requirement to deployment, with a hash-chained audit trail |
+| [idem](https://github.com/udaykishore-resu/idem) | Go library for idempotency keys across HTTP, gRPC and plain functions, with memory, Redis and PostgreSQL stores · on [pkg.go.dev](https://pkg.go.dev/github.com/udaykishore-resu/idem) |
+| [lattice](https://github.com/udaykishore-resu/lattice) | Decision-graph engine on Scala 3 + ZIO: declarative DAGs, per-node timeouts and retries, orchestrated by AWS Step Functions |
+| [zero-trust-api-gateway](https://github.com/udaykishore-resu/zero-trust-api-gateway) | Identity-aware reverse proxy in Go: JWKS-backed JWT, device binding, lock-free RBAC, sub-2ms p50 |
+| [cloudoptix](https://github.com/udaykishore-resu/cloudoptix) | AWS architecture-economics prototype that attributes every dollar to the capability and decision that caused it |
+| [platform-copilot](https://github.com/udaykishore-resu/platform-copilot) | The AI Engineer roadmap built as code: 127 concepts plus a Go SRE knowledge copilot that runs offline |
+| [vertex-sco-platform](https://github.com/udaykishore-resu/vertex-sco-platform) | Event-driven, three-tier self-checkout edge platform in Go |
+| [infoblox-ipam-operator](https://github.com/udaykishore-resu/infoblox-ipam-operator) | Kubernetes operator for CRD-based IP and DNS allocation against Infoblox, with drift detection |
 
-**Stack:** Golang · BPMN · AWS CDK · CI/CD gate checks · immutable audit trail
+---
 
-#### ⚡ Decision Orchestrator & Decisioning Core
+## 🏗️ Production work
 
-gRPC decisioning services in Golang behind a BFF layer exposing REST to consumer applications, secured with mTLS and OPA-based authorization. Serves **50M+ decisions daily at sub-millisecond latency**. Fronted by Decision Control Plane REST APIs with multi-auth support (OAuth 2.0, API key, JWT) and per-tenant IAM policies over DynamoDB audit state. Instrumented end to end with OpenTelemetry and SLO-based automated paging.
+*Built inside employers, so there is no public repository. Expand any item for detail.*
 
-**Stack:** Golang · gRPC · BFF · mTLS · OPA · DynamoDB · OpenTelemetry
+<details>
+<summary><b>🎛️ Intent = Execution: conformance across control plane and data plane</b></summary>
+<br/>
 
-#### 🏗️ Multi-Tenant Onboarding Control Plane
+Architected a consumer decisioning platform as a **control plane** that defines intent and a **data plane** that executes it, with conformance enforced continuously across both. Speckit (spec-driven development) is the control plane's source of truth: PRD, Spec.md, BPMN process models and invariant conformance contracts give product, risk and engineering one machine-readable definition of intent. An I=E gate in the CI/CD pipeline blocks any deployment whose BPMN flows or invariants diverge from the approved spec.
 
-Golang onboarding control plane on AWS CDK that provisions and governs **50+ tenants**, each in a VPC-isolated, Route 53-routed environment. SQS/Lambda event-driven autoscaling with DLQ error isolation, locked down with KMS, IAM permission boundaries, and Secrets Manager. The control-plane governance UI — conformance dashboard, invariant-breach alerting, and immutable audit trail — turns tenant behavior into evidence-backed reporting for engineering, risk, and audit stakeholders.
+The data-plane **I=E Conformance Engine** (BPMN parser, invariant evaluator, verdict producer, evidence recorder) scores every execution against its contract and writes verdicts for replay, audit and regulatory review. Governance stops being a document and becomes a test.
 
-**Stack:** Golang · AWS CDK · SQS/Lambda · KMS · Route 53 · CloudWatch
+**Stack:** Go · BPMN · AWS CDK · CI/CD gate checks · immutable audit trail
+</details>
 
-#### 🧪 Graphite Workflow Engine & Rules Lab
+<details>
+<summary><b>⚡ Decision Orchestrator: 50M+ decisions a day at sub-millisecond latency</b></summary>
+<br/>
 
-Graph-based orchestration platform in Java/Spring Boot on Fargate and Step Functions, paired with a Graph Execution Engine that runs those decisioning graphs in the deployed data plane. On top of it, **Rules Lab** lets analysts author, simulate, and promote decisioning rules against the same graph runtime that serves production traffic — shortening rule turnaround without a code release.
+gRPC decisioning services in Go behind a BFF layer exposing REST to consumer applications, secured with mTLS and OPA-based authorization. Fronted by Decision Control Plane REST APIs with OAuth 2.0, API key and JWT auth, and per-tenant IAM policies over DynamoDB audit state. Instrumented end to end with OpenTelemetry and SLO-based paging.
+
+**Stack:** Go · gRPC · BFF · mTLS · OPA · DynamoDB · OpenTelemetry
+</details>
+
+<details>
+<summary><b>🏗️ Multi-tenant onboarding control plane: 50+ isolated tenants</b></summary>
+<br/>
+
+Go control plane on AWS CDK that provisions and governs each tenant in a VPC-isolated, Route 53-routed environment. SQS/Lambda event-driven autoscaling with DLQ error isolation, locked down with KMS, IAM permission boundaries and Secrets Manager. The governance UI (conformance dashboard, invariant-breach alerting, immutable audit trail) turns tenant behavior into evidence for engineering, risk and audit.
+
+**Stack:** Go · AWS CDK · SQS/Lambda · KMS · Route 53 · CloudWatch
+</details>
+
+<details>
+<summary><b>🧪 Graph workflow engine and Rules Lab</b></summary>
+<br/>
+
+Graph-based orchestration platform in Java/Spring Boot on Fargate and Step Functions, with a Graph Execution Engine that runs decisioning graphs in the data plane. **Rules Lab** lets analysts author, simulate and promote rules against the same runtime that serves production, shortening rule turnaround without a code release.
 
 **Stack:** Java · Spring Boot · Fargate · Step Functions · Lambda
+</details>
 
-#### 🔄 C++ → Golang Self-Checkout SDK Rewrite · NCR Voyix
+<details>
+<summary><b>🔄 C++ → Go self-checkout SDK rewrite · NCR Voyix: 30% lower latency, adoption 35% → 65%</b></summary>
+<br/>
 
-Directed an **8-engineer rewrite** of a legacy C++ self-checkout SDK into Golang microservices on GKE, defining the service patterns used across cart, POS, and loyalty. Cut transaction latency 30% and lifted customer adoption from 35% to 65%. Designed the BFF layer (gRPC internally, REST externally) with MQTT pub/sub and Redis-backed session state, and applied mutual TLS between GKE services and POS devices under least-privilege Cloud IAM.
+Directed an **8-engineer rewrite** of a legacy C++ self-checkout SDK into Go microservices on GKE, defining the service patterns for cart, POS and loyalty. Designed the BFF layer (gRPC inside, REST outside) with MQTT pub/sub and Redis-backed sessions, and mutual TLS between GKE services and POS devices under least-privilege Cloud IAM.
 
-Integrated **Claude** into the team's engineering workflow for C++-to-Go translation, code review, and test-harness generation — accelerating the rewrite and standardizing service patterns across the group. Reached 95% automated coverage and delivered milestones 15% ahead of schedule.
+Brought **Claude** into the team's workflow for C++-to-Go translation, code review and test-harness generation. Reached 95% automated coverage and delivered milestones 15% ahead of schedule.
 
-**Stack:** Golang · GKE · gRPC · MQTT · Redis · Terraform · Helm · Claude
+**Stack:** Go · GKE · gRPC · MQTT · Redis · Terraform · Helm · Claude
+</details>
 
-#### 🗄️ IBM DB2 → AWS Aurora Zero-Downtime Migration · Experian
+<details>
+<summary><b>🗄️ IBM DB2 → AWS Aurora zero-downtime migration · Experian: 70% faster, zero PII exposure</b></summary>
+<br/>
 
-Two-phase credit-data migration off the mainframe stack using SAFENET HSM-encrypted staging and Kafka/Scala CDC — **70% runtime reduction with zero PII exposure**, secured end to end with IAM roles, KMS CMK encryption, Direct Connect VPC routing, and Splunk anomaly alerting. Rebuilt dispute processing as an async graph platform on Amazon Neptune, modeling creditor relationship graphs for sub-200ms lookups behind SQS/DLQ-backed REST APIs.
+Two-phase credit-data migration off the mainframe stack using SAFENET HSM-encrypted staging and Kafka/Scala CDC, secured with IAM roles, KMS CMK encryption, Direct Connect VPC routing and Splunk anomaly alerting. Rebuilt dispute processing as an async graph platform on Amazon Neptune for sub-200ms creditor-relationship lookups behind SQS/DLQ-backed REST APIs.
 
-**Stack:** Scala · Golang · Kafka/MSK · Aurora · Amazon Neptune · SAFENET HSM · Splunk
-
+**Stack:** Scala · Go · Kafka/MSK · Aurora · Amazon Neptune · SAFENET HSM · Splunk
+</details>
 
 ---
 
-### 🔗 Public Code
-**Start here — three repos, in order:**
+## 🛠️ Tech stack
 
-1. **[payments-platform](../../../payments-platform)** — a multi-tenant payment
-   gateway in Go. Nine deployables, hexagonal, no framework. A twelve-step
-   durable saga onboards merchants; a scored-routing orchestrator executes.
-   *Read this one if you want to see how I structure a system.*
+<p>
+  <img src="https://skillicons.dev/icons?i=go,java,scala,cpp,ts&perline=12" alt="Languages" /><br/>
+  <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,docker,terraform&perline=12" alt="Cloud and infrastructure" /><br/>
+  <img src="https://skillicons.dev/icons?i=kafka,postgres,redis,grafana,prometheus,githubactions,jenkins&perline=12" alt="Data, observability and CI/CD" />
+</p>
 
-2. **[db-migration-platform](../../../db-migration-platform)** — zero-downtime,
-   self-verifying database migration. LSN-fenced writes, watermark-based
-   snapshot/CDC, hierarchical digest reconciliation, and a cutover gate that
-   is a proof rather than a checklist.
-   *Read this one if you want to see how I think about correctness.*
+| Area | Tools |
+|---|---|
+| **Cloud & IaC** | AWS (EKS, Lambda, Step Functions, DynamoDB, Aurora, Neptune, MSK) · GCP (GKE) · Terraform · AWS CDK · CloudFormation · Helm |
+| **APIs & messaging** | gRPC · REST · GraphQL · MQTT · Kafka · SQS |
+| **Security** | mTLS · OAuth2/OIDC · OPA · workload identity · KMS/HSM · PCI-DSS and NIST controls |
+| **Observability** | OpenTelemetry · Prometheus · Grafana · Datadog · Splunk · SLO-based alerting |
+| **AI engineering** | Claude · GPT-4 · LLM guardrails · agent gateways · spec-driven development |
 
-3. **[request-journey](../../../request-journey)** — one web request across
-   browser, DNS, TLS, AWS, Kubernetes, data stores and observability, plus
-   16 failure modes, all runnable.
-   *Read this one if you want to see how I explain things.*
-
-**Also public:**
-- `agentgate` — provider-agnostic control plane for enterprise AI agents ·
-- `vertex-sco-platform` — event-driven self-checkout edge platform ·
-- `zero-trust-api-gateway` — identity-aware reverse proxy, sub-2ms p50 ·
-- `specforge` — governed spec-driven engineering, hash-chained audit trail ·
-- `infoblox-ipam-operator` — CRD-based IPAM allocation with drift detection .
 ---
 
-### 📫 Let's Connect
+## 🏅 Certifications
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/udaykishore-resu)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:iamudaykishore@outlook.com)
-[![Medium](https://img.shields.io/badge/-Medium-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@udaykishoreresu)
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/mr.resu_)
+- Google Cloud **Professional Cloud Architect**
+- AWS **Certified Solutions Architect – Associate**
+- Anthropic **Claude Certified Architect**
+- Programming in Golang Specialization (Coursera)
+- Generative AI Fundamentals (Databricks)
 
-<p align="center"><i>Open to collaborations on cloud-native architecture, platform engineering, and distributed systems.</i></p>
+---
+
+<p align="center">
+  <i>Open to conversations about Principal/Staff platform engineering, forward-deployed and AI engineering roles, and collaborations on distributed systems.</i>
+</p>
