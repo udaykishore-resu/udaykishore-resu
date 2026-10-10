@@ -24,7 +24,6 @@
 | ⚡ **Scale** | 50M+ decisions a day at sub-millisecond latency, across 50+ tenants |
 | 🎛️ **Signature work** | **Intent = Execution**: a CI/CD gate and a runtime conformance engine that prove deployed behavior matches the approved spec |
 | 🌐 **Open source** | Upstream pull requests to **NVIDIA**, **Kubernetes SIGs (Karpenter)** and **Open Source Risk Engine** |
-| 📘 **Writing** | Author of *System Design for AI: Architecting Production-Grade LLM, RAG, Agentic, and AI Platforms* (2026) |
 | 🏅 **Certified** | Anthropic Claude Certified Architect · Google Cloud Professional Cloud Architect · AWS Solutions Architect – Associate |
 
 ---
